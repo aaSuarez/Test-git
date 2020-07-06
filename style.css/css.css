@@ -1,42 +1,62 @@
 * {
-    margin: 10px;
+  
     padding: 10px;
     box-sizing: border-box;
 }
+a{
+text-decoration: none;
+color: white;
+text-transform: uppercase;
+letter-spacing: 2px;
+padding: 0 10px;
+
+}
+a:hover{
+    color: silver;
+}
+
+body{
+    font-family: 'Bangers', cursive,sans-serif;
+}
+
 /*header de el elemt*/
 .padre{
     display: flex;
     flex-flow: column nowrap;
 }
 .header {
+
     flex-flow: column;
     display: flex;
-    background: #000000;
-    ;
+    background:url(../img/update.jpg);
+    background-position: center;
+    background-size: cover;
+    
 }
 
 .menu {
-    background: #b9ac92;
+    background: rgba(0,0,0,0.5);
     display: flex;
     flex-flow: row nowrap;
-    height: 100px;
     align-items: center;
+    height: 100px;
 }
 
 .logo {
-    background: #fa1616;
+    
     flex: 1 1 auto ;
-    height: 50px;
+    
+    
 }
 
 .navegacion {
-    background: #fa1616;
+    
     flex: 5 1 auto ;
     height: 50px;
 }
 
 .redes {
-    background-color: #fa1616;
+    
     flex: 1 1 auto ;
     height: 50px;
 }
