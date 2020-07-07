@@ -12,7 +12,8 @@ padding: 0 10px;
 
 }
 a:hover{
-    color: silver;
+    color: rgb(59, 59, 59);
+   
 }
 
 body{
@@ -28,14 +29,18 @@ body{
 
     flex-flow: column;
     display: flex;
-    background:url(../img/update.jpg);
+    /*background:url(../img/update.jpg);
     background-position: center;
     background-size: cover;
-    
+    */
+    background: #616161;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #9bc5c3, #616161);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #9bc5c3, #616161); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .menu {
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.1);
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -46,7 +51,15 @@ body{
     
     flex: 1 1 auto ;
     
-    
+   
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 21px;
+    color: #ffffff;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.6;
 }
 
 .navegacion {
@@ -72,27 +85,42 @@ body{
     justify-content: center;
 
 }
-.principal {
-    background: rgba(20, 148, 170, 0.966);
+.principal{
+    height: 500px;
+    display: flex;
+    align-items: center;
 }
 
-h1 {
-    background: rgb(231, 37, 37);
 
-}
+
+
 /*fin de el header*/
 /*main de el elemento*/
 
 .articulos{
-    background: darkgray;
+    background: #f7f7f7;
     flex: 2 1 auto;
     display: flex;
     flex-flow: row wrap;
 
-
+}
+h3{
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 0;
+    margin-left: -125px;
+}
+h2{
+    color: #ffffff;
+    margin-top: -40px;
+    letter-spacing: 2px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0px 0px 5px 15px;
 }
 .info{
-    background: green;
+    letter-spacing: 1px;
+    font-size: 13px;
+    color: #444444;
     flex: 1 1 40%;
     display: flex;
     flex-flow: row wrap;
@@ -142,3 +170,4 @@ h1 {
         flex-direction: column;
     }
 }
+
